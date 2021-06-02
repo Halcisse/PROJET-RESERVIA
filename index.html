@@ -1,13 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="Fr">
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
 
   <body>
-    <div class="header">
+    <!--Bloc en-tête -->
+    <header class="entete">
+      <!--Avec Logo-->
       <div class="logo">
         <img
           src="./Projet2-Reservia/images/logo/Reservia@3x.png"
@@ -15,54 +22,80 @@
           style="height: 50px"
         />
       </div>
+      <!--Avec les ancres hebergements et activités + s'inscrire-->
       <div class="button">
-        <div class="button-hebergement"><a href="#hebergement">Hébergements</a></div>
-        <div class="button-activite"><a href="#activite">Activités</a></div>
-        <div class="button-inscrire"><a href="#">S'inscrire</a></div>
+        <div class="button-hebergement">
+          <a href="#hebergement">Hébergements</a>
+        </div>
+        <div class="button-activite">
+          <a href="#activite">Activités</a>
+        </div>
+        <div class="inscrire">
+          <a href="#">S'inscrire</a>
+        </div>
       </div>
-    </div>
-
+    </header>
+    <!--Bloc Corps de page-->
     <div class="main">
+      <!--1.Section recherche -->
       <div class="recherche">
+        <!--1a.titre et sous_titre-->
         <div class="titre">
-          Trouvez votre hébérgement pour des vacances de rêve
+          <h1>Trouvez votre hébérgement pour des vacances de rêve</h1>
+          <p class="soustitre">En plein centre-ville ou en pleine nature</p>
         </div>
-        <p>En plein centre-ville ou en pleine nature </p> </br>
+        <!--1b.Bouton de recherche (icon loc + champs de saisie + rechercher)-->
         <div class="search-button"></div>
-          <label for="recherche">Recherche</label>
-          <input type="search" />
+          <i class="fas fa-map-marker-alt" ></i><!--a revoir-->
+          <input
+            type="search"
+            name="saisie"
+            id="saisie"
+            placeholder="Marseille, France"
+          />
+          <label class="rechercher">Rechercher</label>
+        </div>
+        <!--1c.Filtres (à compléter)-->
+        <div class="filtre">
+          Filtres
+          <div class="economique">Economique</div>
+          <div class="familial">Familial</div>
+          <div class="romantique">Romantique</div>
+          <div class="animaux">Animaux autorisés</div>
+        </div>
+        <!--1d.Infos-->
+        <div class="info">
+          <i class="fas fa-info-circle"></i><!--a revoir-->
+          <p class="soustitre">Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
       </div>
-      <div class="filtre"> Filtres
-        <div class="economique">Economique</div>
-        <div class="familial">Familial</div>
-        <div class="romantique">Romantique</div>
-        <div class="animaux">Animaux autorisés</div>
-      </div>
+      <!--2.Section hébérgements (à compléter)-->
       <div class="hebergement" id="hebergement">
         <div class="choix">Hebergement à Marseilles</div>
         <div class="populaires">Les plus populaires</div>
       </div>
+      <!--3.Section activités (à compléter)-->
       <div class="activites" id="activite">
-       <div class="titre">Activités à Marseilles</div>
+        <div class="titre">Activités à Marseilles</div>
       </div>
     </div>
+    <!--Bloc footer-->
     <div class="footer">
       <div class="apropos">
-        <div class="title">A propos</div>
-        <div>Fonctionnement du site</div>
-        <div>Condition général de ventes</div>
-        <div>Données et confidentialité</div>
+        <h3>A propos</h3>
+        <p>Fonctionnement du site</p>
+        <p>Condition général de ventes</p>
+        <p>Données et confidentialité</p>
       </div>
-      <div class="Noshebergements">
-        <div class="title">Nos hébérgements</div>
-        <div>Charte qualité</div>
-        <div>Soumettre votre hotel</div>
+      <div class="noshebergements">
+        <h3>Nos hébérgements</h3>
+        <p>Charte qualité</p>
+        <p>Soumettre votre hotel</p>
       </div>
       <div class="assistance">
-        <div class="title">Assistance</div>
-        <div>Centre d'aide</div>
-        <div>Nous contacter</div>
+        <h3>Assistance</h3>
+        <p>Centre d'aide</p>
+        <p>Nous contacter</p>
       </div>
     </div>
   </body>

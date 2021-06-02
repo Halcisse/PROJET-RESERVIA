@@ -2,42 +2,39 @@
 
 .* {
   margin: 10px;
-  padding: 10px;
+  padding: 0px;
   font-family: "raleway", sans-serif;
 }
 body {
   display: flex;
   flex-direction: column;
   margin: 10px;
-  padding: 10px;
+  padding: 0px;
 }
 
 /*position du logo et du menu*/
-.header {
+
+.entete {
   display: flex;
   justify-content: space-between;
-  margin: 10px;
 }
 
-.logo {
-  margin-bottom: 15px;
-}
 .button {
   display: flex;
 }
 
-/*Apparence des éléments du menu*/
 .button > * {
-  margin: 10px 10px;
-  padding: 0 5px;
+  justify-content: space-between;
   cursor: pointer;
 }
 
 .button-hebergement {
+  color: black;
 }
 .button-activite {
+  color: black;
 }
-.button-inscrire {
+.inscrire {
   font-weight: bold;
   color: #0065fc;
 }
@@ -47,13 +44,11 @@ body {
 a {
   outline: none;
   text-decoration: none;
-  color: black;
 }
 
 a:hover {
   text-decoration: overline;
   color: #0065fc;
-  font-size: 20px;
 }
 
 a:visited {
