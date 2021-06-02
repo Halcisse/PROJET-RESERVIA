@@ -1,20 +1,139 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 
 .* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Raleway", sans-serif;
+  margin: 10px;
+  padding: 10px;
+  font-family: "raleway", sans-serif;
 }
 body {
   display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
 }
 
+/*position du logo et du menu*/
 .header {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px;
 }
 
-.button .main .hebergement .activité .footer;
+.logo {
+  margin-bottom: 15px;
+}
+.button {
+  display: flex;
+}
+
+/*Apparence des éléments du menu*/
+.button > * {
+  margin: 10px 10px;
+  padding: 0 5px;
+  cursor: pointer;
+}
+
+.button-hebergement {
+}
+.button-activite {
+}
+.button-inscrire {
+  font-weight: bold;
+  color: #0065fc;
+}
+
+/*Apparence des liens (ancres) du menu */
+
+a {
+  outline: none;
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: overline;
+  color: #0065fc;
+  font-size: 20px;
+}
+
+a:visited {
+  color: none;
+}
+
+/*corps de page : a faire plus tard*/
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.titre {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/*recherche et enfants*/
+/*
+.recherche {
+  background-color: cadetblue;
+}
+.search-button{
+
+}
+*/
+
+/* Filtre et enfants*/
+.filtre {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 40%;
+  font-weight: bold;
+}
+
+.economique {
+  border-radius: 30px;
+}
+/*.hebergement {
+    background-color: cadetblue;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hebergement > * {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.choix {
+  height: 75%;
+  padding: 20%;
+  background-color: cadetblue;
+}
+.populaires {
+  height: 25%;
+  padding: 20%;
+  background-color: cadetblue;
+}
+
+.activite {
+  background-color: cadetblue;
+  margin: 10px 10px;
+  padding: 0 10px;
+}*/
+
+/*footer ok*/
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  margin: 10px;
+  padding-right: 30%;
+  padding-left: 2%;
+}
+
+.title {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}

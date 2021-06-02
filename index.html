@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Document</title>
   </head>
 
@@ -10,33 +10,60 @@
     <div class="header">
       <div class="logo">
         <img
-          src="./Projet 2 - Reservia/images/logo/Reservia@3x.png"
+          src="./Projet2-Reservia/images/logo/Reservia@3x.png"
           alt="logo"
           style="height: 50px"
         />
       </div>
       <div class="button">
-        <div class="button-hebergement">Hébergements</div>
-        <div class="button-activité">Activités</div>
-        <div class="s'inscrire">S'inscrire</div>
+        <div class="button-hebergement"><a href="#hebergement">Hébergements</a></div>
+        <div class="button-activite"><a href="#activite">Activités</a></div>
+        <div class="button-inscrire"><a href="#">S'inscrire</a></div>
       </div>
     </div>
 
     <div class="main">
-      <div class="hebergement">
-        <div class="recherche">
+      <div class="recherche">
+        <div class="titre">
           Trouvez votre hébérgement pour des vacances de rêve
         </div>
-        <div class="filtre">Filtres</div>
+        <p>En plein centre-ville ou en pleine nature </p> </br>
+        <div class="search-button"></div>
+          <label for="recherche">Recherche</label>
+          <input type="search" />
+        </div>
+      </div>
+      <div class="filtre"> Filtres
+        <div class="economique">Economique</div>
+        <div class="familial">Familial</div>
+        <div class="romantique">Romantique</div>
+        <div class="animaux">Animaux autorisés</div>
+      </div>
+      <div class="hebergement" id="hebergement">
         <div class="choix">Hebergement à Marseilles</div>
         <div class="populaires">Les plus populaires</div>
       </div>
-      <div class="Activités">Activités à Marseilles</div>
+      <div class="activites" id="activite">
+       <div class="titre">Activités à Marseilles</div>
+      </div>
     </div>
     <div class="footer">
-      <div class="apropos">A propos</div>
-      <div class="Noshebergements">Nos hébérgements</div>
-      <div class="assistance">Assistance</div>
+      <div class="apropos">
+        <div class="title">A propos</div>
+        <div>Fonctionnement du site</div>
+        <div>Condition général de ventes</div>
+        <div>Données et confidentialité</div>
+      </div>
+      <div class="Noshebergements">
+        <div class="title">Nos hébérgements</div>
+        <div>Charte qualité</div>
+        <div>Soumettre votre hotel</div>
+      </div>
+      <div class="assistance">
+        <div class="title">Assistance</div>
+        <div>Centre d'aide</div>
+        <div>Nous contacter</div>
+      </div>
     </div>
   </body>
 </html>
