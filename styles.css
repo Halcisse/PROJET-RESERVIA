@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 
 .* {
-  margin: 10px;
+  margin: 5px;
   padding: 0px;
-  font-family: "raleway", sans-serif;
 }
 body {
+  font-family: "raleway", sans-serif;
   display: flex;
   flex-direction: column;
-  margin: 10px;
+  margin: 5px;
   padding: 0px;
 }
 
@@ -17,42 +17,51 @@ body {
 .entete {
   display: flex;
   justify-content: space-between;
+  padding-top: 20px;
 }
 
 .button {
   display: flex;
+  border-top: 2px solid transparent;
 }
 
 .button > * {
-  justify-content: space-between;
   cursor: pointer;
+  margin: 15px 25px;
+  padding: 0 10px;
+  
 }
 
 .button-hebergement {
-  color: black;
 }
 .button-activite {
-  color: black;
 }
 .inscrire {
-  font-weight: bold;
-  color: #0065fc;
+  
 }
 
 /*Apparence des liens (ancres) du menu */
 
 a {
-  outline: none;
   text-decoration: none;
+  color: black;
 }
 
-a:hover {
+ a:hover {
+  
   text-decoration: overline;
-  color: #0065fc;
+  color: #0065FC;
 }
 
-a:visited {
-  color: none;
+.inscrire a {
+  color:#0065FC;
+  text-decoration: none;
+  font-weight: bold;
+}
+.inscrire a:hover {
+  text-decoration: underline;
+  font-size: 18px;
+ 
 }
 
 /*corps de page : a faire plus tard*/
@@ -121,8 +130,7 @@ a:visited {
 .footer {
   display: flex;
   justify-content: space-between;
-  background-color: #f2f2f2;
-  margin: 10px;
+  background-color: #f2f2f2; 
   padding-right: 30%;
   padding-left: 2%;
 }
@@ -132,3 +140,17 @@ a:visited {
   font-weight: bold;
   margin-bottom: 10px;
 }
+
+/* Liens du footer */
+
+.footer a {
+  outline: none;
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration:underline;
+ 
+}
+
+.footer a:visited {
+  color: black;
