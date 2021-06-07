@@ -1,43 +1,50 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 
-.* {
-  margin: 5px;
+* {
+  margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
+
 body {
   font-family: "raleway", sans-serif;
   display: flex;
   flex-direction: column;
-  margin: 5px;
-  padding: 0px;
+  max-width: auto;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 /*position du logo et du menu*/
 
+.logo{
+  margin-top: 35px;
+}
+
 .entete {
+  
   display: flex;
   justify-content: space-between;
-  padding-top: 20px;
+  margin-bottom: 15px;
+
 }
 
 .button {
   display: flex;
-  border-top: 2px solid transparent;
 }
 
 .button > * {
+  display: block;
   cursor: pointer;
-  margin: 15px 25px;
-  padding: 0 10px;
-  
+  margin: 15px 15px;
+  padding: 10px 10px;
+  padding-top: 37px;
 }
 
-.button-hebergement {
-}
-.button-activite {
-}
-.inscrire {
-  
+.button-bold {
+  color:#0065FC;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 /*Apparence des liens (ancres) du menu */
@@ -47,21 +54,15 @@ a {
   color: black;
 }
 
- a:hover {
-  
-  text-decoration: overline;
+.button a:hover {
+  border-top: 2px solid #0065FC;
+  padding-top: 35px;
   color: #0065FC;
 }
 
-.inscrire a {
-  color:#0065FC;
-  text-decoration: none;
-  font-weight: bold;
-}
-.inscrire a:hover {
-  text-decoration: underline;
-  font-size: 18px;
- 
+.button-bold:hover {
+  border-top: none;
+
 }
 
 /*corps de page : a faire plus tard*/
@@ -71,73 +72,142 @@ a {
   flex-direction: column;
 }
 
-.titre {
-  font-size: 15px;
+/*TITRES*/
+
+.titre{
+  margin-bottom: 15px;
+}
+
+h1 {
   font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+.soustitre{
+  margin-bottom: 0px;
+  margin-left: 3px;
 }
 
-/*recherche et enfants*/
-/*
-.recherche {
-  background-color: cadetblue;
-}
+/*RECHERCHE*/
+
 .search-button{
+display: flex;
+align-items: center;
+margin-bottom: 20px;
 
 }
-*/
 
-/* Filtre et enfants*/
-.filtre {
+.iconmap {
+  font-size: 25px;
+  background-color: #F2F2F2;
+  border: 2px #F2F2F2 solid;
+  border-radius: 15px;
+}
+
+form{
+  font-size: 25px;
+  border: transparent;
+  
+}
+
+label {
+  font-size: 25px;
+  color: white;
+  background-color: #0065FC;
+  border-radius: 15px;
+  border: #F2F2F2 SOLID 2PX;
+}
+
+/*FILTRES + INFOS */
+
+.filtres{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-right: 40%;
   font-weight: bold;
+  margin-bottom:20px ;
 }
+.filtre{
+  display: flex;
+  border: 2px #F2F2F2 solid;
+  border-radius: 25px;
+  align-items: center;
+  justify-content: center;
+  padding-right: 15px;
+  
 
-.economique {
+}
+.icon {
+  border: 2px transparent solid;
   border-radius: 30px;
+  padding: 12px;
+  background-color: #DEEBFF;
+  color: #0065FC;
 }
-/*.hebergement {
-    background-color: cadetblue;
+
+.info{
+  display: flex;
+  margin-bottom: 30px;
+  align-items: center;
+  
+}
+
+.iconinfo{
+  border: 1px #F2F2F2 solid;
+  border-radius: 70px;
+  color: #0065FC;
+  padding: 0.5%;
+  font-size: 10PX;
+}
+/*HEBERGEMENT ET ENFANTS*/
+
+.zones{
+  background-color: #F2F2F2;
+  border-radius: 15px;
+}
+
+.hebergement {
   display: flex;
   justify-content: space-between;
+  box-sizing: border-box;
+  }
+  .zone1{
+    height: 70%;
+    margin-right: 10px;
+  }
+  .zone2{
+    height: 30%;
+    margin-left: 10%;
+  }
+
+
+/*ACTIVITES*/
+
+.activites{
+  background-color: #F2F2F2;
+  border-radius: 15px;
+  padding: 40px;
+  margin-bottom: 20px;
 }
 
-.hebergement > * {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.choix {
-  height: 75%;
-  padding: 20%;
-  background-color: cadetblue;
-}
-.populaires {
-  height: 25%;
-  padding: 20%;
-  background-color: cadetblue;
-}
-
-.activite {
-  background-color: cadetblue;
-  margin: 10px 10px;
-  padding: 0 10px;
-}*/
-
-/*footer ok*/
+/*FOOTER*/
 .footer {
   display: flex;
   justify-content: space-between;
   background-color: #f2f2f2; 
   padding-right: 30%;
   padding-left: 2%;
+  padding-bottom: 15px;
+  padding-top: 15px;
 }
 
-.title {
-  font-size: 15px;
+.footer h3 {
+  font-size: 17px;
   font-weight: bold;
+  padding-bottom: 10px;
+}
+.footer p {
   margin-bottom: 10px;
 }
 
@@ -149,6 +219,7 @@ a {
 }
 .footer a:hover {
   text-decoration:underline;
+  padding-top: none;
  
 }
 

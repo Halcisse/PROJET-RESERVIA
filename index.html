@@ -8,6 +8,10 @@
       href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
       rel="stylesheet"
     />
+    <link href="./CSS/fontawesome.css" rel="stylesheet" />
+    <link href="./CSS/brands.css" rel="stylesheet" />
+    <link href="./CSS/solid.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/0508c06f11.js" crossorigin="anonymous"></script>
     <title>Document</title>
   </head>
 
@@ -18,21 +22,17 @@
       <div class="logo">
         <img
           src="./Projet2-Reservia/images/logo/Reservia@3x.png"
-          alt="logo"
+          alt="logo de reservia"
           style="height: 50px"
         />
       </div>
       <!--Avec les ancres hebergements et activités + s'inscrire-->
       <div class="button">
-        <div class="button-hebergement">
-          <a href="#hebergement">Hébergements</a>
-        </div>
-        <div class="button-activite">
-          <a href="#activite">Activités</a>
-        </div>
-        <div class="inscrire">
-          <a href="#">S'inscrire</a>
-        </div>
+        <a href="#hebergement">Hébergements</a>
+
+        <a href="#activite">Activités</a>
+
+        <a class="button-bold" href="#">S'inscrire</a>
       </div>
     </header>
     <!--Bloc Corps de page-->
@@ -45,38 +45,61 @@
           <p class="soustitre">En plein centre-ville ou en pleine nature</p>
         </div>
         <!--1b.Bouton de recherche (icon loc + champs de saisie + rechercher)-->
-        <div class="search-button"></div>
-          <i class="fas fa-map-marker-alt" ></i><!--a revoir-->
-          <input
+        <div class="search-button">
+          <div class="iconmap"><a href="#"></a><i class="fas fa-map-marker-alt"></i
+          ></a>
+          </div>
+          <form method="post" action="traitement.php">
+            <p>
+            <input
             type="search"
-            name="saisie"
-            id="saisie"
+            name="rechercher"
+            id="rechercher"
             placeholder="Marseille, France"
-          />
-          <label class="rechercher">Rechercher</label>
+            />
+            </p>
+          </form>
+          <label for="rechercher">Rechercher</label>
         </div>
-        <!--1c.Filtres (à compléter)-->
-        <div class="filtre">
-          Filtres
-          <div class="economique">Economique</div>
-          <div class="familial">Familial</div>
-          <div class="romantique">Romantique</div>
-          <div class="animaux">Animaux autorisés</div>
+        <!--1c.Filtres-->
+        <div class="filtres">
+          <p>Filtres</p>
+          <div class="filtre">
+            <div class="icon"><i class="fas fa-money-bill-wave"></i></div>
+            <div class="economique">Economique</div>
+          </div>
+          <div class="filtre">
+            <div class="icon"><i class="fas fa-child"></i></div>
+            <div class="familial">Familial</div>
+          </div>
+          <div class="filtre">
+            <div class="icon"><i class="fas fa-heart"></i></div>
+            <div class="romantique">Romantique</div>
+          </div>
+          <div class="filtre">
+            <div class="icon"><i class="fas fa-dog"></i></div>
+            <div class="animaux">Animaux autorisés</div>
+          </div>
         </div>
         <!--1d.Infos-->
         <div class="info">
-          <i class="fas fa-info-circle"></i><!--a revoir-->
-          <p class="soustitre">Plus de 500 logements sont disponibles dans cette ville</p>
+          <div class="iconinfo"><i class="fas fa-info"></i>
+          </div>
+          <p class="soustitre">
+            Plus de 500 logements sont disponibles dans cette ville
+          </p>
         </div>
       </div>
       <!--2.Section hébérgements (à compléter)-->
-      <div class="hebergement" id="hebergement">
-        <div class="choix">Hebergement à Marseilles</div>
-        <div class="populaires">Les plus populaires</div>
-      </div>
-      <!--3.Section activités (à compléter)-->
-      <div class="activites" id="activite">
-        <div class="titre">Activités à Marseilles</div>
+      <div class="zones">
+        <div class="hebergement" id="hebergement">
+          <div class="zone1">Hebergement à Marseilles</div>
+          <div class="zone2">Les plus populaires</div>
+        </div>
+        <!--2.B.Section activités (à compléter)-->
+        <div class="activites" id="activite">
+          <div class="zone3">Activités à Marseilles</div>
+        </div>
       </div>
     </div>
     <!--Bloc footer-->
