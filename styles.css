@@ -62,7 +62,6 @@ a {
 
 .button-bold:hover {
   border-top: none;
-
 }
 
 /*corps de page : a faire plus tard*/
@@ -84,38 +83,52 @@ h1 {
   margin-bottom: 8px;
 }
 .soustitre{
-  margin-bottom: 0px;
   margin-left: 3px;
 }
 
 /*RECHERCHE*/
 
 .search-button{
-display: flex;
-align-items: center;
-margin-bottom: 20px;
-
-}
-
-.iconmap {
-  font-size: 25px;
-  background-color: #F2F2F2;
+  display: flex;
+  align-items: center;
+  margin: 0 67% 25px 0;
+  padding-right:30px;
   border: 2px #F2F2F2 solid;
-  border-radius: 15px;
+  border-radius: 25px;
+}
+/*icon*/
+.iconmap {
+  font-size: 15px;
+  background-color: #F2F2F2;
+  border-radius: 13px;
+  padding:14px 25px 10px 25px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
-form{
-  font-size: 25px;
+/*champ de saisie*/
+input{
+  padding:11px 25px 11px 25px;
   border: transparent;
-  
+  border-radius: 30px;
+  font-family: "raleway";
+  font-size: 15px;
 }
+
+/*bouton rechercher*/
 
 label {
-  font-size: 25px;
-  color: white;
   background-color: #0065FC;
-  border-radius: 15px;
-  border: #F2F2F2 SOLID 2PX;
+  border-radius: 25px;
+  padding:12px 25px 10px 25px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  align-items: center;
+}
+
+label a {
+  font-size: 17px;
+  color: white;
 }
 
 /*FILTRES + INFOS */
@@ -123,25 +136,35 @@ label {
 .filtres{
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-right: 40%;
+  align-items:center;
   font-weight: bold;
-  margin-bottom:20px ;
+  margin-right: 25%;
+  margin-bottom: 25px;
 }
-.filtre{
+
+.filtres a {
   display: flex;
   border: 2px #F2F2F2 solid;
   border-radius: 25px;
   align-items: center;
   justify-content: center;
-  padding-right: 15px;
-  
-
+  padding-right: 30px;
 }
+
+.filtres a:hover{
+   border: 2px #0065FC solid;
+   color:#0065FC;
+   background-color: #DEEBFF;
+} 
+
+
+/*ICON FILTRES*/
+
 .icon {
   border: 2px transparent solid;
   border-radius: 30px;
   padding: 12px;
+  margin-right: 10px;
   background-color: #DEEBFF;
   color: #0065FC;
 }
@@ -160,6 +183,8 @@ label {
   padding: 0.5%;
   font-size: 10PX;
 }
+
+
 /*HEBERGEMENT ET ENFANTS*/
 
 .zones{

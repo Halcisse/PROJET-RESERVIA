@@ -11,7 +11,10 @@
     <link href="./CSS/fontawesome.css" rel="stylesheet" />
     <link href="./CSS/brands.css" rel="stylesheet" />
     <link href="./CSS/solid.css" rel="stylesheet" />
-    <script src="https://kit.fontawesome.com/0508c06f11.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/0508c06f11.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Document</title>
   </head>
 
@@ -46,45 +49,44 @@
         </div>
         <!--1b.Bouton de recherche (icon loc + champs de saisie + rechercher)-->
         <div class="search-button">
-          <div class="iconmap"><a href="#"></a><i class="fas fa-map-marker-alt"></i
-          ></a>
+          <div class="iconmap">
+            <a href="#"><i class="fas fa-map-marker-alt"></i></a>
           </div>
           <form method="post" action="traitement.php">
             <p>
-            <input
-            type="search"
-            name="rechercher"
-            id="rechercher"
-            placeholder="Marseille, France"
-            />
+              <input
+                type="search"
+                name="rechercher"
+                id="rechercher"
+                placeholder="Marseille, France"
+              />
             </p>
           </form>
-          <label for="rechercher">Rechercher</label>
+          <label for="rechercher"><a href="#">Rechercher</a></label>
         </div>
         <!--1c.Filtres-->
         <div class="filtres">
           <p>Filtres</p>
-          <div class="filtre">
+          <a href="filtre">
             <div class="icon"><i class="fas fa-money-bill-wave"></i></div>
-            <div class="economique">Economique</div>
-          </div>
-          <div class="filtre">
+            <div class="btn-filtre">Economique</div>
+          </a>
+          <a href="filtre">
             <div class="icon"><i class="fas fa-child"></i></div>
-            <div class="familial">Familial</div>
-          </div>
-          <div class="filtre">
+            <div class="btn-filtre">Familial</div>
+          </a>
+          <a href="filtre">
             <div class="icon"><i class="fas fa-heart"></i></div>
             <div class="romantique">Romantique</div>
-          </div>
-          <div class="filtre">
+          </a>
+          <a href="filtre">
             <div class="icon"><i class="fas fa-dog"></i></div>
             <div class="animaux">Animaux autorisés</div>
-          </div>
+          </a>
         </div>
         <!--1d.Infos-->
         <div class="info">
-          <div class="iconinfo"><i class="fas fa-info"></i>
-          </div>
+          <div class="iconinfo"><i class="fas fa-info"></i></div>
           <p class="soustitre">
             Plus de 500 logements sont disponibles dans cette ville
           </p>
