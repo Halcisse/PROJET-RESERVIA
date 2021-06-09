@@ -10,15 +10,16 @@ body {
   font-family: "raleway", sans-serif;
   display: flex;
   flex-direction: column;
-  max-width: auto;
-  margin-left: 20px;
-  margin-right: 20px;
+  max-width: 1158;
+  margin-left: 55px;
+  margin-right: 55px;
+  
 }
 
 /*position du logo et du menu*/
 
 .logo{
-  margin-top: 35px;
+  margin-top: 10px;
 }
 
 .entete {
@@ -36,7 +37,7 @@ body {
 .button > * {
   display: block;
   cursor: pointer;
-  margin: 15px 15px;
+  margin: 15px 55px;
   padding: 10px 10px;
   padding-top: 37px;
 }
@@ -58,10 +59,6 @@ a {
   border-top: 2px solid #0065FC;
   padding-top: 35px;
   color: #0065FC;
-}
-
-.button-bold:hover {
-  border-top: none;
 }
 
 /*corps de page : a faire plus tard*/
@@ -91,7 +88,7 @@ h1 {
 .search-button{
   display: flex;
   align-items: center;
-  margin: 0 67% 25px 0;
+  margin: 0 67% 23px 0;
   padding-right:30px;
   border: 2px #F2F2F2 solid;
   border-radius: 25px;
@@ -125,7 +122,6 @@ label {
   border-bottom-left-radius: 0;
   align-items: center;
 }
-
 label a {
   font-size: 17px;
   color: white;
@@ -163,6 +159,7 @@ label a {
 .icon {
   border: 2px transparent solid;
   border-radius: 30px;
+  /* ajouter hauteur et largeur*/;
   padding: 12px;
   margin-right: 10px;
   background-color: #DEEBFF;
@@ -173,46 +170,77 @@ label a {
   display: flex;
   margin-bottom: 30px;
   align-items: center;
-  
 }
 
 .iconinfo{
   border: 1px #F2F2F2 solid;
-  border-radius: 70px;
+  border-radius: 90px;
   color: #0065FC;
   padding: 0.5%;
+  margin-right: 3px;
   font-size: 10PX;
 }
 
 
 /*HEBERGEMENT ET ENFANTS*/
 
+.zones h2{
+  font-family: 'raleway' sans-serif;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
 .zones{
-  background-color: #F2F2F2;
-  border-radius: 15px;
+  display: block;
+  
 }
 
 .hebergement {
   display: flex;
-  justify-content: space-between;
-  box-sizing: border-box;
+  margin-bottom: 20px;
   }
-  .zone1{
-    height: 70%;
-    margin-right: 10px;
+
+.zone1{
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    width: 704px;
+    height: 626px;
+    margin-right: 45px;
+    padding: 28px 26px 15px 28px;
   }
+
+img{
+  border: 15px white solid;
+  border-radius: 15px;
+  width: 162px;
+  margin-top: 26px;
+  }
+
+  .pictures{
+    justify-content: center;
+  }
+  .image{
+    display: flex;
+    justify-content: space-around;
+  }
+
   .zone2{
-    height: 30%;
-    margin-left: 10%;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    width: 423px;
+    height: 626px;
+    padding: 28px 26px 15px 28px;
   }
+
 
 
 /*ACTIVITES*/
 
-.activites{
+.zone3{
   background-color: #F2F2F2;
   border-radius: 15px;
-  padding: 40px;
+  width: 1162px;
+  height: 552px;
+  padding: 28px 26px 15px 28px;
   margin-bottom: 20px;
 }
 
@@ -225,6 +253,7 @@ label a {
   padding-left: 2%;
   padding-bottom: 15px;
   padding-top: 15px;
+  width: 1162px;
 }
 
 .footer h3 {

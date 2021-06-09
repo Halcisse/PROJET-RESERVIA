@@ -23,11 +23,12 @@
     <header class="entete">
       <!--Avec Logo-->
       <div class="logo">
-        <img
-          src="./Projet2-Reservia/images/logo/Reservia@3x.png"
-          alt="logo de reservia"
-          style="height: 50px"
-        />
+        <a href="#"
+          ><img
+            src="./Projet2-Reservia/images/logo/Reservia@3x.png"
+            alt="logo de reservia"
+            style="height: 75px"
+        /></a>
       </div>
       <!--Avec les ancres hebergements et activités + s'inscrire-->
       <div class="button">
@@ -49,18 +50,14 @@
         </div>
         <!--1b.Bouton de recherche (icon loc + champs de saisie + rechercher)-->
         <div class="search-button">
-          <div class="iconmap">
-            <a href="#"><i class="fas fa-map-marker-alt"></i></a>
-          </div>
+          <a class="iconmap" href="#"><i class="fas fa-map-marker-alt"></i></a>
           <form method="post" action="traitement.php">
-            <p>
-              <input
-                type="search"
-                name="rechercher"
-                id="rechercher"
-                placeholder="Marseille, France"
-              />
-            </p>
+            <input
+              type="search"
+              name="rechercher"
+              id="rechercher"
+              placeholder="Marseille, France"
+            />
           </form>
           <label for="rechercher"><a href="#">Rechercher</a></label>
         </div>
@@ -95,12 +92,53 @@
       <!--2.Section hébérgements (à compléter)-->
       <div class="zones">
         <div class="hebergement" id="hebergement">
-          <div class="zone1">Hebergement à Marseilles</div>
-          <div class="zone2">Les plus populaires</div>
+          <div class="zone1">
+            <h2>Hébergements à Marseilles</h2>
+            <div class="pictures">
+              <div class="picligne1">
+                <div class="image">
+                  <img
+                    src="./Projet2-Reservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                    style="height: 114px"
+                  />
+                  <img
+                    src="./Projet2-Reservia/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                    style="height: 114px"
+                  />
+                  <img
+                    src="./Projet2-Reservia/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                    style="height: 114px"
+                  />
+                </div>
+              </div>
+              <div class="picligne2">
+                <div class="image">
+                  <img
+                    src="./Projet2-Reservia/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                    style="height: 114px"
+                  />
+                  <img
+                    src="./Projet2-Reservia/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+                    style="height: 114px"
+                  />
+                  <img
+                    src="./Projet2-Reservia/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+                    style="height: 114px"
+                  />
+                </div>
+              </div>
+            </div>
+            <h4>Afficher plus</h4>
+          </div>
+          <div class="zone2">
+            <h2>Les plus populaires</h2>
+          </div>
         </div>
         <!--2.B.Section activités (à compléter)-->
         <div class="activites" id="activite">
-          <div class="zone3">Activités à Marseilles</div>
+          <div class="zone3">
+            <h2>Activités à Marseilles</h2>
+          </div>
         </div>
       </div>
     </div>
