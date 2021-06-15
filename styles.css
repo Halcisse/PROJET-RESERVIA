@@ -18,12 +18,13 @@ body {
 .entete {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   margin-left: 48px;
   margin-right: 48px;
 }
 .logo {
-  margin-top: 10px;
+  margin-top: 30px;
+  width: 70px;
 }
 
 .button {
@@ -34,7 +35,7 @@ body {
   display: block;
   cursor: pointer;
   margin-top: 15px;
-  padding: 10px 10px;
+  padding: 10px 30px;
   padding-top: 37px;
 }
 
@@ -87,7 +88,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 67% 23px 0;
+  margin: 0 67% 28px 0;
   border: 2px #f2f2f2 solid;
   border-radius: 15px;
   height: 51px;
@@ -131,7 +132,9 @@ label {
   padding-left: 12px;
   padding-right: 12px;
 }
-label a {
+/*METTRE UN LIEN SUR BOUTON ENTIER RECHERCHER*/
+
+.btn-recherche {
   font-size: 17px;
   color: white;
 }
@@ -153,7 +156,7 @@ label a {
   border-radius: 25px;
   align-items: center;
   justify-content: center;
-  padding-right: 30px;
+  padding-right: 38px;
 }
 
 .filtres a:hover {
@@ -165,9 +168,13 @@ label a {
 /*ICON FILTRES*/
 
 .icon {
+  display: flex;
+  align-items: center;
   border: 2px transparent solid;
   border-radius: 30px;
   /* ajouter hauteur et largeur*/
+  width: 50px;
+  height: 45px;
   padding: 12px;
   margin-right: 10px;
   background-color: #deebff;
@@ -181,28 +188,31 @@ label a {
 }
 
 .iconinfo {
-  border: 1px #f2f2f2 solid;
-  border-radius: 90px;
+  /* Comment mettre la bordure plus ronde*/
+  border: 2px #f2f2f2 solid;
+  border-radius: 120px;
   color: #0065fc;
-  padding: 0.5%;
-  margin-right: 3px;
-  font-size: 10px;
+  padding: 4px;
+  margin-right: 5px;
+  font-size: 8px;
 }
 
 /*HEBERGEMENT ET ENFANTS*/
 
 h2,
-h3 {
+h4 {
   font-size: 16px;
+  margin-top: 20px;
   margin-left: 41px;
   padding-bottom: 20px;
 }
 
-h3 :hover {
+h4 :hover {
   text-decoration: underline;
 }
 
 .hergement {
+  /* Ajouter les bonnes photos + texte + lien + étoiles*/
   display: flex;
   justify-content: space-around;
   margin-bottom: 30px;
@@ -228,8 +238,11 @@ h3 :hover {
   width: 248px;
   background-color: white;
   border-radius: 20px;
-  margin-bottom: 29px;
-  padding: 5px 5px 5px 5px;
+  margin-bottom: 35px;
+  padding: 5px 5px 15px 5px;
+}
+.cards a:hover {
+  /*a definir*/
 }
 
 /*la photo*/
@@ -244,6 +257,24 @@ h3 :hover {
   overflow: hidden;
 }
 
+.descriptioncard {
+  margin-left: 10px;
+}
+.name {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.stars {
+  display: flex;
+  margin-top: 5px;
+}
+.bluestar {
+  color: #0065fc;
+}
+.greystar {
+  color: #f2f2f2;
+}
 /*ASIDE*/
 
 .aside-maincontener {
@@ -267,7 +298,7 @@ h3 :hover {
   background-color: white;
   border-radius: 20px;
   margin-bottom: 29px;
-  padding: 5px 5px 5px 5px;
+  padding: 5px 5px 05px 5px;
 }
 
 .aside-imagecard {
@@ -364,25 +395,26 @@ h3 :hover {
 }
 /*FOOTER*/
 .footer {
+  background-color: #f2f2f2;
+}
+
+.textfooter {
   display: flex;
   justify-content: space-between;
-  background-color: #f2f2f2;
-  padding-right: 30%;
-  padding-left: 2%;
-  padding-bottom: 15px;
-  padding-top: 15px;
-  width: 100%;
+  align-items: center;
+  height: 176px;
+  width: 974px;
+  margin-left: 60px;
 }
 
 .footer h3 {
-  font-size: 17px;
   font-weight: bold;
-  padding-bottom: 10px;
+  margin-bottom: 15px;
+  font-size: 16px;
 }
 .footer p {
   margin-bottom: 10px;
 }
-
 /* Liens du footer */
 
 .footer a {
