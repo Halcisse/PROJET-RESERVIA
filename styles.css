@@ -58,11 +58,12 @@ a {
   color: #0065fc;
 }
 
-/*corps de page : a faire plus tard*/
+/*corps de page*/
 
 .main {
   display: flex;
   flex-direction: column;
+
   margin-left: 55px;
   margin-right: 55px;
 }
@@ -172,7 +173,6 @@ label {
   align-items: center;
   border: 2px transparent solid;
   border-radius: 30px;
-  /* ajouter hauteur et largeur*/
   width: 50px;
   height: 45px;
   padding: 12px;
@@ -203,7 +203,7 @@ h2,
 h4 {
   font-size: 16px;
   margin-top: 20px;
-  margin-left: 41px;
+  margin-left: 30px;
   padding-bottom: 20px;
 }
 
@@ -211,9 +211,9 @@ h4 :hover {
   text-decoration: underline;
 }
 
-.hergement {
-  /* Ajouter les bonnes photos + texte + lien + étoiles*/
+.hebergement {
   display: flex;
+  align-items: center;
   justify-content: space-around;
   margin-bottom: 30px;
 }
@@ -237,12 +237,14 @@ h4 :hover {
 .cards {
   width: 248px;
   background-color: white;
-  border-radius: 20px;
+  border-radius: 16px;
   margin-bottom: 35px;
   padding: 5px 5px 15px 5px;
+  box-shadow: 0px 0px 10px lightgrey;
 }
-.cards a:hover {
-  /*a definir*/
+
+.main a:hover {
+  /* comment modifier les éléments au survol ? */
 }
 
 /*la photo*/
@@ -251,7 +253,7 @@ h4 :hover {
   align-items: center;
   width: 237px;
   height: 115px;
-  border-radius: 20px;
+  border-radius: 16px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   overflow: hidden;
@@ -267,13 +269,15 @@ h4 :hover {
 }
 .stars {
   display: flex;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 .bluestar {
   color: #0065fc;
+  font-size: 14px;
 }
 .greystar {
   color: #f2f2f2;
+  font-size: 14px;
 }
 /*ASIDE*/
 
@@ -293,29 +297,39 @@ h4 :hover {
 .aside-cards {
   display: flex;
   overflow: hidden;
-  width: 343px;
-  height: 147px;
+  width: 320px;
+  height: 137px;
   background-color: white;
-  border-radius: 20px;
+  border-radius: 16px;
   margin-bottom: 29px;
-  padding: 5px 5px 05px 5px;
+  padding: 5px 5px 5px 5px;
+  box-shadow: 0px 0px 10px lightgrey;
 }
 
 .aside-imagecard {
   display: flex;
   align-items: center;
-  width: 131px;
-  height: 134px;
-  border-radius: 20px;
+  width: 125px;
+  height: 127px;
+  border-radius: 16px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   overflow: hidden;
+  background-color: chartreuse;
+  /* La taille d'une des photo ne semodifie pas*/
 }
 
 .aside-cardcontener {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+}
+
+.aside-text {
+  margin-left: 10px;
+}
+.aside-price {
+  margin-bottom: 55px;
 }
 
 /*ACTIVITE*/
@@ -337,9 +351,9 @@ h4 :hover {
 .bigactivite-cards {
   height: 448px;
   width: 300px;
-  background-color: chartreuse;
   border-radius: 20px;
   margin-bottom: 29px;
+  box-shadow: 5px 5px 5px #f2f2f2;
 }
 
 .activite-imagecard {
@@ -368,7 +382,7 @@ h4 :hover {
   overflow: hidden;
   width: 300px;
   height: 240px;
-  background-color: coral;
+  box-shadow: 5px 5px 5px #f2f2f2;
 }
 
 .actimagecard1 {
@@ -383,7 +397,7 @@ h4 :hover {
   overflow: hidden;
   width: 300px;
   height: 171px;
-  background-color: coral;
+  box-shadow: 5px 5px 5px #f2f2f2;
 }
 
 .actimagecard2 {
@@ -392,6 +406,12 @@ h4 :hover {
   border-radius: 20px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
+}
+
+.activite-name {
+  margin-left: 15px;
+  margin-top: 20px;
+  font-weight: bold;
 }
 /*FOOTER*/
 .footer {
@@ -428,4 +448,9 @@ h4 :hover {
 
 .footer a:visited {
   color: black;
+}
+
+/*RESPONSIVE POUR ECRAN TYPE IPHONE 8 */
+
+@media screen and (max-width= 668px) {
 }
