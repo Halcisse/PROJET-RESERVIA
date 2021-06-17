@@ -121,7 +121,7 @@ input {
 
 /*bouton rechercher*/
 
-label {
+.btn-recherche label {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -132,10 +132,7 @@ label {
   height: 51px;
   padding-left: 12px;
   padding-right: 12px;
-}
-/*METTRE UN LIEN SUR BOUTON ENTIER RECHERCHER*/
-
-.btn-recherche {
+  cursor: pointer;
   font-size: 17px;
   color: white;
 }
@@ -143,12 +140,15 @@ label {
 /*FILTRES + INFOS */
 
 .filtres {
+  /**/
+  max-width: 1200px; /**/
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-weight: bold;
-  margin-right: 25%;
   margin-bottom: 25px;
+  margin-right: 25%;
+  flex-wrap: wrap; /**/
 }
 
 .filtres a {
@@ -171,9 +171,10 @@ label {
 .icon {
   display: flex;
   align-items: center;
+  justify-content: center;
   border: 2px transparent solid;
   border-radius: 30px;
-  width: 50px;
+  width: 45px;
   height: 45px;
   padding: 12px;
   margin-right: 10px;
@@ -181,6 +182,7 @@ label {
   color: #0065fc;
 }
 
+/*INFOS*/
 .info {
   display: flex;
   margin-bottom: 30px;
@@ -188,9 +190,13 @@ label {
 }
 
 .iconinfo {
-  /* Comment mettre la bordure plus ronde*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 2px #f2f2f2 solid;
-  border-radius: 120px;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
   color: #0065fc;
   padding: 4px;
   margin-right: 5px;
@@ -201,9 +207,13 @@ label {
 
 h2,
 h4 {
-  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: bold;
   margin-top: 20px;
   margin-left: 30px;
+  margin-right: 20px;
   padding-bottom: 20px;
 }
 
@@ -257,6 +267,10 @@ h4 :hover {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   overflow: hidden;
+  margin-bottom: 5px;
+}
+.imagecard img {
+  height: 100%;
 }
 
 .descriptioncard {
@@ -309,14 +323,18 @@ h4 :hover {
 .aside-imagecard {
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 125px;
   height: 127px;
   border-radius: 16px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   overflow: hidden;
-  background-color: chartreuse;
-  /* La taille d'une des photo ne semodifie pas*/
+}
+
+.aside-imagecard img {
+  height: 100%;
+  width: 100%;
 }
 
 .aside-cardcontener {
@@ -326,10 +344,10 @@ h4 :hover {
 }
 
 .aside-text {
-  margin-left: 10px;
+  margin-left: 16px;
 }
 .aside-price {
-  margin-bottom: 55px;
+  margin-bottom: 45px;
 }
 
 /*ACTIVITE*/
@@ -343,6 +361,10 @@ h4 :hover {
   width: 1260px;
   margin-top: 30px;
 }
+
+.activite-maincontener h2 {
+  margin-left: 0;
+}
 .activite-cardcontener {
   display: flex;
   justify-content: space-around;
@@ -354,6 +376,11 @@ h4 :hover {
   border-radius: 20px;
   margin-bottom: 29px;
   box-shadow: 5px 5px 5px #f2f2f2;
+}
+
+.bigactivite-cards img {
+  height: 100%;
+  width: 100%;
 }
 
 .activite-imagecard {
@@ -385,6 +412,11 @@ h4 :hover {
   box-shadow: 5px 5px 5px #f2f2f2;
 }
 
+.actimagecard1 img {
+  width: 100%;
+  height: 100%;
+}
+
 .actimagecard1 {
   height: 185px;
   width: 300px;
@@ -406,6 +438,11 @@ h4 :hover {
   border-radius: 20px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
+}
+
+.actimagecard2 img {
+  width: 100%;
+  height: 100%;
 }
 
 .activite-name {
@@ -452,5 +489,35 @@ h4 :hover {
 
 /*RESPONSIVE POUR ECRAN TYPE IPHONE 8 */
 
-@media screen and (max-width= 668px) {
+@media (max-width: 600px) {
+  .body {
+    max-width: 667px;
+  }
+  .entete {
+    display: inline-block;
+  }
+  .button {
+    display: inline-block;
+  }
+  .search-button {
+    width: auto;
+  }
+  .filtres {
+    display: inline-block;
+    flex-wrap: wrap;
+    width: 100%;
+    color: rebeccapurple;
+    margin-bottom: 11px;
+  }
+
+  .filtre {
+  }
+  .hebergement {
+  }
+
+  .textfooter {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
 }
