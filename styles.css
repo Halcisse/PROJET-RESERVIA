@@ -39,6 +39,9 @@ body {
   padding-top: 37px;
 }
 
+.firstbutton a {
+  padding: 10px 30px;
+}
 .button-bold {
   color: #0065fc;
   text-decoration: none;
@@ -205,18 +208,20 @@ input {
 
 /*HEBERGEMENT ET ENFANTS*/
 
-h2,
-h4 {
+h2 {
   display: flex;
   justify-content: space-between;
   font-size: 18px;
   font-weight: bold;
-  margin-top: 20px;
-  margin-left: 30px;
-  margin-right: 20px;
+  margin: 20px 20px 0 30px;
   padding-bottom: 20px;
 }
 
+h4 {
+  font-size: 16px;
+  margin: 10px 0 0 30px;
+  padding-bottom: 20px;
+}
 h4 :hover {
   text-decoration: underline;
 }
@@ -346,8 +351,9 @@ h4 :hover {
 .aside-text {
   margin-left: 16px;
 }
+
 .aside-price {
-  margin-bottom: 45px;
+  margin-bottom: 40px;
 }
 
 /*ACTIVITE*/
@@ -489,18 +495,51 @@ h4 :hover {
 
 /*RESPONSIVE POUR ECRAN TYPE IPHONE 8 */
 
-@media (max-width: 600px) {
+@media screen and (max-width: 667px) {
   .body {
     max-width: 667px;
+    margin: 5px 5px 5px 5px;
   }
+
+  /*ENTETE*/
+
   .entete {
-    display: inline-block;
+    width: 100%;
   }
   .button {
-    display: inline-block;
+    flex-direction: column-reverse;
+    margin-bottom: 20px;
   }
+  .button-bold {
+    margin-left: 390px;
+    margin-right: 100px;
+  }
+  .firstbutton a {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #f2f2f2;
+    padding: 0 75px 35px 55px;
+  }
+  .firstbutton a:hover {
+    border-bottom: 2px solid #0065fc;
+    padding: 0 75px 35px 55px;
+    color: #0065fc;
+    border-top: none;
+  }
+
+  /*Titre + sous-titre*/
+  h1 {
+    font-size: 27px;
+    font-weight: bold;
+  }
+  .soustitre {
+    font-size: 19;
+  }
+
+  /*Le bouton de recherches et les filtres*/
   .search-button {
-    width: auto;
+    width: 100%;
   }
   .filtres {
     display: inline-block;
@@ -509,15 +548,60 @@ h4 :hover {
     color: rebeccapurple;
     margin-bottom: 11px;
   }
-
   .filtre {
   }
+  /*Les blocs*/
+
   .hebergement {
+    flex-direction: column-reverse;
+  }
+  .aside-maincontener {
+    width: 667px;
+    background-color: #f2f2f2;
+    margin-bottom: 15px;
+    border-radius: 0;
+  }
+  .aside-cardcontener{
+    flex-direction: column;
+    align-items: center;
+  }
+  .maincontener {
+    width: 667px;
+    height: 1635px;
+    background-color: chartreuse;
+    border-radius: 0;
+  
+  }
+  .cardcontener{
+    flex-direction: column;
+    align-items: center;
+  }
+  .activite-maincontener {
+    background-color: chocolate;
+    width: 667px;
+    height: 1635px;
+  }
+  .activite-cardcontener{
+    flex-direction: column;
+    align-items: center;
   }
 
+  /*Le footer*/
   .textfooter {
     flex-direction: column;
+    justify-content: center;
     align-items: flex-start;
-    width: 100%;
+    margin-top: 97px;
+  }
+  .footer {
+    background-color: #f2f2f2;
+    width: 667px;
+    height: 378px;
+  }
+  .footer h3 {
+    margin-top: 25px;
+  }
+  .footer p {
+    margin-bottom: 13px;
   }
 }
