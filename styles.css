@@ -506,7 +506,6 @@ h4 :hover {
 
   .entete {
     width: 100%;
-    margin-left: 0;
   }
   .button {
     flex-direction: column-reverse;
@@ -626,17 +625,53 @@ h4 :hover {
 
   /*Activités*/
   .activite-maincontener {
-    background-color: chocolate;
     width: 667px;
-    height: 1635px;
+    height: 1515px;
     margin-top: 0;
     margin-left: 0;
   }
   .activite-cardcontener {
     flex-direction: column;
-    align-items: center;
+  }
+  .bigactivite-cards {
+    width: 556px;
+    height: 220px;
+  }
+  .activite-imagecard {
+    width: 556px;
+    height: 126px;
+  }
+  .activite-imagecard img {
+    height: 100%;
+    width: 100%;
   }
 
+  .smallactivite-imagecard1 {
+    width: 556px;
+    height: 220px;
+    margin-bottom: 29px;
+  }
+  .actimagecard1 {
+    width: 556px;
+    height: 126px;
+  }
+  .actimagecard1 img {
+    height: 100%;
+    width: 100%;
+  }
+  .smallactivite-imagecard2 {
+    width: 556px;
+    height: 220px;
+    margin-bottom: 29px;
+  }
+  .actimagecard2 {
+    width: 556px;
+    height: 126px;
+  }
+  .actimagecard2 img {
+    height: 100%;
+    width: 100%;
+  }
   /*Le footer*/
   .textfooter {
     flex-direction: column;
