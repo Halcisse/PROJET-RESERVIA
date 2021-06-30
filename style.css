@@ -374,7 +374,7 @@ h4 :hover {
 }
 .activite-maincontener {
   height: 543px;
-  width: 1299px;
+  width: 1305px;
   margin-top: 30px;
 }
 
@@ -419,8 +419,7 @@ h4 :hover {
   height: 448px;
 }
 
-.mediumactivite-imagecard {
-  padding-bottom: 15px;
+.medium-card {
   align-items: center;
   width: 300px;
   height: 215px;
@@ -429,11 +428,11 @@ h4 :hover {
   box-shadow: 5px 5px 5px #f2f2f2;
 }
 
-.mediumimage img {
+.medium-imagecard img {
   width: 100%;
 }
 
-.mediumimage {
+.medium-imagecard {
   display: flex;
   width: 300px;
   height: 166px;
@@ -441,8 +440,7 @@ h4 :hover {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
-.miniactivite-imagecard {
-  padding-bottom: 15px;
+.mini-card {
   border-radius: 20px;
   overflow: hidden;
   width: 300px;
@@ -450,10 +448,10 @@ h4 :hover {
   box-shadow: 5px 5px 5px #f2f2f2;
 }
 
-.miniimage img {
+.mini-imagecard img {
   width: 100%;
 }
-.miniimage {
+.mini-imagecard {
   display: flex;
   width: 300px;
   height: 130px;
@@ -613,7 +611,6 @@ h4 :hover {
   .activites {
     display: block;
     align-items: center;
-    margin-left: 10px;
   }
   .activite-maincontener {
     width: 100%;
@@ -627,75 +624,50 @@ h4 :hover {
 
   .bigactivite-cards {
     width: 317px;
-
-    background-color: coral;
+    height: 100%;
+    padding-bottom: 22px;
+    margin-bottom: 32px;
   }
 
   .bigactivite-cards img {
-    height: 30px;
     width: 100%;
   }
 
   .activite-imagecard {
+    height: 120px;
     width: 100%;
   }
 
+  .medium-card {
+    width: 317px;
+    height: 100%;
+    margin-bottom: 22px;
+  }
+
+  .medium-imagecard img {
+    width: 100%;
+  }
+
+  .medium-imagecard {
+    height: 120px;
+    width: 100%;
+  }
+  .mini-card {
+    width: 317px;
+    height: 100%;
+    margin-bottom: 22px;
+  }
+
+  .mini-imagecard img {
+    width: 100%;
+  }
+  .mini-imagecard {
+    height: 120px;
+    width: 100%;
+  }
   .smallactivite-cards {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border-radius: 20px;
-    padding: 5px 5px 5px 5px;
-    width: 309px;
-    height: 448px;
-  }
-
-  .mediumactivite-imagecard {
-    padding-bottom: 15px;
-    align-items: center;
-    width: 300px;
-    height: 215px;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 5px 5px 5px #f2f2f2;
-  }
-
-  .mediumimage img {
-    width: 100%;
-  }
-
-  .mediumimage {
-    display: flex;
-    width: 300px;
-    height: 166px;
-    border-radius: 20px;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-  }
-  .miniactivite-imagecard {
-    padding-bottom: 15px;
-    border-radius: 20px;
-    overflow: hidden;
-    width: 300px;
-    height: 181px;
-    box-shadow: 5px 5px 5px #f2f2f2;
-  }
-
-  .miniimage img {
-    width: 100%;
-  }
-  .miniimage {
-    display: flex;
-    width: 300px;
-    height: 130px;
-    border-radius: 20px;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-  }
-
-  .activite-name {
-    margin-left: 15px;
-    margin-top: 20px;
-    font-weight: bold;
+    padding: 0;
+    height: 398px;
+    margin-bottom: 32px;
   }
 }
