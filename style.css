@@ -314,8 +314,8 @@ h4 :hover {
   background-color: #f2f2f2;
   border-radius: 20px;
   height: 623px;
-  width: 370px;
-  margin-left: 10px;
+  /* width: 370px;
+  margin-left: 10px; */
   padding-top: 25px;
 }
 .aside-cardcontener {
@@ -475,7 +475,8 @@ footer {
   justify-content: space-between;
   align-items: center;
   height: 176px;
-  width: 974px;
+  max-width: 974px;
+  /* width: 100%; */
   margin-left: 60px;
 }
 
@@ -549,9 +550,15 @@ footer a:visited {
     font-size: 25px;
   }
 
+  .main {
+    margin: 0;
+    padding: 0;
+  }
+
   /*BOUTON DE RECHERCHE*/
   .recherche {
     margin-left: 0;
+    padding: 0 15px;
   }
   .search-button {
     width: 60%;
@@ -586,22 +593,22 @@ footer a:visited {
 
   .hebergement {
     flex-direction: column-reverse;
+    margin-bottom: 0;
   }
   /*Populaire*/
+
+  .populaire {
+    width: 100%;
+  }
   .aside-maincontener {
-    width: 432px;
     height: 100%;
     margin-bottom: 0;
     border-radius: 0;
     align-items: center;
   }
-  h2,
-  h4 {
-    margin-left: 54px;
-  }
-
-  #arrow {
-    margin-right: 30px;
+  .aside-maincontener h2 {
+    display: flex;
+    justify-content: space-between;
   }
   .aside-cardcontener {
     display: flex;
@@ -620,12 +627,15 @@ footer a:visited {
   }
   /*Choix*/
   .maincontener {
-    width: 432px;
+    width: 100%;
     height: 100%;
     border-radius: 0;
     margin-bottom: 0;
-    margin-left: 19px;
     background-color: white;
+  }
+  .maincontener h2,
+  h4 {
+    margin-left: 5px;
   }
   .cardcontener {
     flex-direction: column;
@@ -645,13 +655,17 @@ footer a:visited {
 
   /*Activités*/
 
+  .activites {
+    margin: 0;
+    width: 100%;
+  }
+
   .activite-maincontener {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
   }
-
   .activite-cardcontener {
     display: flex;
     flex-direction: column;
@@ -659,17 +673,18 @@ footer a:visited {
   }
 
   .activite-maincontener h2 {
-    margin-left: 0;
+    margin-left: 29px;
   }
   .bigactivite-cards {
     width: 317px;
-    height: 100%;
+    height: auto;
     padding-bottom: 22px;
     margin-bottom: 32px;
   }
 
   .bigactivite-cards img {
     width: 100%;
+    height: auto;
   }
 
   .activite-imagecard {
@@ -685,11 +700,13 @@ footer a:visited {
 
   .medium-imagecard img {
     width: 100%;
+    /* height: auto; */
   }
 
   .medium-imagecard {
     height: 120px;
     width: 100%;
+    background-color: chartreuse;
   }
   .mini-card {
     width: 317px;
@@ -715,11 +732,10 @@ footer a:visited {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin-top: 97px;
+    margin-top: 136px;
   }
   footer {
     background-color: #f2f2f2;
-    width: 100%;
     height: 478px;
   }
   footer h3 {
