@@ -28,7 +28,6 @@ header {
 
 .entete {
   width: 100%;
-  max-width: 1440px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -79,11 +78,13 @@ header {
 .main {
   display: flex;
   flex-direction: column;
-  margin: 0 15px;
+  align-items: center;
+  margin: 0 30px;
 }
 
 .recherche {
-  margin-left: 25px;
+  width: 100%;
+  max-width: 1305px;
 }
 /*TITRES*/
 
@@ -139,7 +140,7 @@ input {
 
 /*bouton rechercher*/
 
-.btn-recherche label {
+.rechercher {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -155,18 +156,17 @@ input {
   color: white;
 }
 
-/*FILTRES + INFOS */
+/* FILTRES + INFOS */
 
 .filtres {
-  /**/
-  max-width: 1200px; /**/
+  max-width: 1200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-weight: bold;
   margin-bottom: 25px;
   margin-right: 25%;
-  flex-wrap: wrap; /**/
+  flex-wrap: wrap;
 }
 
 .filtres a {
@@ -223,8 +223,6 @@ input {
 /*HEBERGEMENT ET ENFANTS*/
 
 h2 {
-  display: flex;
-  justify-content: space-between;
   font-size: 18px;
   font-weight: bold;
   margin: 20px 20px 0 30px;
@@ -242,7 +240,6 @@ h4 :hover {
 
 .hebergement {
   display: flex;
-  align-items: center;
   justify-content: space-around;
   margin-bottom: 30px;
 }
@@ -251,8 +248,7 @@ h4 :hover {
 .maincontener {
   background-color: #f2f2f2;
   border-radius: 20px;
-  height: 623px;
-  width: 850px;
+  width: auto;
   margin-right: 15px;
   padding-top: 25px;
 }
@@ -314,9 +310,15 @@ h4 :hover {
   background-color: #f2f2f2;
   border-radius: 20px;
   height: 623px;
-  /* width: 370px;
-  margin-left: 10px; */
+  min-width: 375px;
+  max-width: 440px;
   padding-top: 25px;
+}
+
+.aside-maincontener h2 {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 10px;
 }
 .aside-cardcontener {
   display: flex;
@@ -367,23 +369,30 @@ h4 :hover {
 
 /*ACTIVITE*/
 
-.activites {
-  display: block;
-  align-items: center;
-  margin-left: 10px;
-}
 .activite-maincontener {
-  height: 543px;
-  width: 1305px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
   margin-top: 30px;
 }
 
 .activite-maincontener h2 {
-  margin-left: 10px;
+  display: flex;
+  justify-content: left;
 }
 .activite-cardcontener {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.activitebloc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: auto;
 }
 
 .bigactivite-cards {
@@ -412,11 +421,13 @@ h4 :hover {
 .smallactivite-cards {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: space-between;
   border-radius: 20px;
   padding: 5px 5px 5px 5px;
+  margin: 0 17px 30px 17px;
   width: 309px;
-  height: 448px;
+  height: 455px;
 }
 
 .medium-card {
@@ -434,6 +445,9 @@ h4 :hover {
 
 .medium-imagecard {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
   width: 300px;
   height: 166px;
   border-radius: 20px;
@@ -476,7 +490,6 @@ footer {
   align-items: center;
   height: 176px;
   max-width: 974px;
-  /* width: 100%; */
   margin-left: 60px;
 }
 
@@ -504,7 +517,7 @@ footer a:visited {
 }
 
 /*RESPONSIVE POUR ECRAN TYPE IPHONE 8 */
-@media (max-width: 960px) {
+@media (max-width: 775px) {
   /*ENTETE*/
   .entete {
     flex-wrap: wrap;
@@ -512,7 +525,7 @@ footer a:visited {
   }
   .logo {
     order: 1;
-    margin-left: 10px;
+    padding-left: 10px;
   }
 
   .button {
@@ -633,10 +646,7 @@ footer a:visited {
     margin-bottom: 0;
     background-color: white;
   }
-  .maincontener h2,
-  h4 {
-    margin-left: 5px;
-  }
+
   .cardcontener {
     flex-direction: column;
     align-items: center;
@@ -700,13 +710,11 @@ footer a:visited {
 
   .medium-imagecard img {
     width: 100%;
-    /* height: auto; */
   }
 
   .medium-imagecard {
     height: 120px;
     width: 100%;
-    background-color: chartreuse;
   }
   .mini-card {
     width: 317px;
