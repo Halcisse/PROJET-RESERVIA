@@ -1,15 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 
 * {
-  margin: 0px;
-  padding: 0px;
   box-sizing: border-box;
 }
 
 body {
   font-family: "raleway", sans-serif;
-  display: flex;
-  flex-direction: column;
   width: 100%;
   height: 100%;
 }
@@ -22,17 +18,14 @@ a {
 header {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   margin-bottom: 20px;
+  margin-left: 40px;
 }
 
 .entete {
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-right: 15px;
-  margin-left: 33px;
 }
 .logo {
   margin-top: 30px;
@@ -79,12 +72,11 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 30px;
+  justify-content: center;
 }
 
 .recherche {
-  width: 100%;
-  max-width: 1305px;
+  width: 94%;
 }
 /*TITRES*/
 
@@ -242,6 +234,7 @@ h4 :hover {
   display: flex;
   justify-content: space-around;
   margin-bottom: 30px;
+  width: 94%;
 }
 
 /*le bloc gris*/
@@ -310,15 +303,13 @@ h4 :hover {
   background-color: #f2f2f2;
   border-radius: 20px;
   height: 623px;
-  min-width: 375px;
   max-width: 440px;
   padding-top: 25px;
 }
 
 .aside-maincontener h2 {
   display: flex;
-  justify-content: space-around;
-  margin-left: 10px;
+  justify-content: space-between;
 }
 .aside-cardcontener {
   display: flex;
@@ -369,16 +360,17 @@ h4 :hover {
 
 /*ACTIVITE*/
 
+.activites {
+  width: 94%;
+}
 .activite-maincontener {
   display: flex;
   flex-direction: column;
   height: auto;
-  margin-top: 30px;
 }
 
 .activite-maincontener h2 {
-  display: flex;
-  justify-content: left;
+  margin: 0;
 }
 .activite-cardcontener {
   display: flex;
@@ -386,13 +378,6 @@ h4 :hover {
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-}
-.activitebloc {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: auto;
 }
 
 .bigactivite-cards {
@@ -516,9 +501,80 @@ footer a:visited {
   color: black;
 }
 
-/*RESPONSIVE POUR ECRAN TYPE IPHONE 8 */
-@media (max-width: 775px) {
+/*RESPONSIVE POUR GRANDS ECRANS */
+@media (min-width: 1366px) {
   /*ENTETE*/
+  .entete {
+    margin-right: 55px;
+  }
+  /*ASIDE*/
+  .aside-maincontener {
+    max-width: 650px;
+  }
+  .aside-cards {
+    width: 420px;
+    height: 152px;
+  }
+  /*HEBERGEMENT*/
+  .cards {
+    width: 339px;
+  }
+  .imagecard {
+    width: 100%;
+  }
+  /*ACTIVITES*/
+  .activite-maincontener {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .activite-maincontener h2 {
+    margin-right: 90%;
+  }
+  .activite-cardcontener {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .bigactivite-cards {
+    width: 400px;
+  }
+  .activite-imagecard {
+    width: 100%;
+  }
+  .medium-card {
+    width: 340px;
+  }
+  .medium-imagecard {
+    width: 100%;
+  }
+
+  .mini-card {
+    width: 340px;
+  }
+  .mini-imagecard {
+    width: 100%;
+  }
+}
+/*RESPONSIVE POUR LES ECRANS MOYENS TYPES TABLETTES ORDI PORTABLE 
+@media (min-width: 776px) and (max-width: 1365px) {
+  .aside-maincontener {
+    max-width: 520px;
+  }
+  .aside-cards {
+    width: 350px;
+    height: 152px;
+  }
+}*/
+/*RESPONSIVE POUR ECRAN TYPE IPHONE 8 & Tablettes */
+@media (max-width: 992px) {
+  /*ENTETE*/
+
+  header {
+    margin-left: 0;
+    align-items: center;
+  }
   .entete {
     flex-wrap: wrap;
     margin: 0;
@@ -526,26 +582,24 @@ footer a:visited {
   .logo {
     order: 1;
     padding-left: 10px;
+    margin-top: 0;
   }
 
   .button {
     order: 3;
     width: 100%;
   }
-
   .firstbutton {
     display: flex;
     width: 100%;
     margin: 0;
     padding: 0;
   }
-
   .firstbutton a {
     width: 50%;
     text-align: center;
     border-bottom: 2px solid #f2f2f2;
   }
-
   .firstbutton a:hover {
     border-top: none;
     padding-top: 10px;
@@ -558,16 +612,13 @@ footer a:visited {
     margin-right: 10px;
     margin-top: 10px;
   }
-
   h1 {
     font-size: 25px;
   }
-
   .main {
     margin: 0;
     padding: 0;
   }
-
   /*BOUTON DE RECHERCHE*/
   .recherche {
     margin-left: 0;
@@ -576,7 +627,6 @@ footer a:visited {
   .search-button {
     width: 60%;
   }
-
   .search-button {
     width: 100%;
   }
@@ -588,7 +638,6 @@ footer a:visited {
   input {
     width: 100%;
   }
-
   /*FILTRES*/
   .filtres {
     flex-wrap: wrap;
@@ -603,21 +652,18 @@ footer a:visited {
     margin-bottom: 19px;
   }
   /*LES BLOCS*/
-
   .hebergement {
     flex-direction: column-reverse;
     margin-bottom: 0;
   }
   /*Populaire*/
-
   .populaire {
     width: 100%;
   }
   .aside-maincontener {
     height: 100%;
-    margin-bottom: 0;
+    max-width: 775px;
     border-radius: 0;
-    align-items: center;
   }
   .aside-maincontener h2 {
     display: flex;
@@ -631,7 +677,6 @@ footer a:visited {
   .aside-cards {
     height: 137px;
   }
-
   .aside-imagecard img {
     height: 100%;
   }
@@ -643,14 +688,13 @@ footer a:visited {
     width: 100%;
     height: 100%;
     border-radius: 0;
-    margin-bottom: 0;
+    margin: 0;
     background-color: white;
   }
 
   .cardcontener {
     flex-direction: column;
     align-items: center;
-    width: 100%;
   }
   .cards {
     width: 317px;
@@ -658,30 +702,22 @@ footer a:visited {
   .imagecard img {
     width: 100%;
   }
-
   .imagecard {
     width: 100%;
   }
-
   /*Activités*/
-
   .activites {
     margin: 0;
-    width: 100%;
   }
-
   .activite-maincontener {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 100%;
   }
   .activite-cardcontener {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
   .activite-maincontener h2 {
     margin-left: 29px;
   }
@@ -691,17 +727,14 @@ footer a:visited {
     padding-bottom: 22px;
     margin-bottom: 32px;
   }
-
   .bigactivite-cards img {
     width: 100%;
     height: auto;
   }
-
   .activite-imagecard {
     height: 120px;
     width: 100%;
   }
-
   .medium-card {
     width: 317px;
     height: 100%;
@@ -721,7 +754,6 @@ footer a:visited {
     height: 100%;
     margin-bottom: 22px;
   }
-
   .mini-imagecard img {
     width: 100%;
   }
@@ -734,17 +766,16 @@ footer a:visited {
     height: 398px;
     margin-bottom: 32px;
   }
-
   /*FOOTER*/
   .textfooter {
     flex-direction: column;
-    justify-content: center;
     align-items: flex-start;
-    margin-top: 136px;
+    margin-top: 16px;
   }
   footer {
     background-color: #f2f2f2;
-    height: 478px;
+    height: 485px;
+    max-width: 775px;
   }
   footer h3 {
     margin-top: 25px;
