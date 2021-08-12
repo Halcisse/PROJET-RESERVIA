@@ -19,7 +19,7 @@ header {
   display: flex;
   justify-content: space-around;
   margin-bottom: 20px;
-  margin-left: 40px;
+  padding-left: 40px;
 }
 
 .entete {
@@ -139,14 +139,16 @@ input {
   border-radius: 15px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-  height: 55px;
+  height: 50px;
   padding-left: 12px;
   padding-right: 12px;
   cursor: pointer;
   font-size: 17px;
   color: white;
 }
-
+.loupe {
+  display: none;
+}
 /* FILTRES + INFOS */
 
 .filtres {
@@ -183,8 +185,8 @@ input {
   justify-content: center;
   border: 2px transparent solid;
   border-radius: 30px;
-  width: 35px;
-  height: 35px;
+  width: 45px;
+  height: 45px;
   padding: 12px;
   margin-right: 10px;
   background-color: #deebff;
@@ -364,6 +366,7 @@ h4 :hover {
 .activite-maincontener {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   height: auto;
 }
 
@@ -498,8 +501,23 @@ footer a:visited {
   color: black;
 }
 
-/*RESPONSIVE POUR GRANDS ECRANS */
-@media (min-width: 1366px) {
+/*RESPONSIVE POUR GRANDS ECRANS au dessus de 1720px*/
+@media (min-width: 1720px) {
+  .cards {
+    width: 379px;
+  }
+  .imagecard {
+    width: 100%;
+  }
+  .aside-maincontener {
+    max-width: 750px;
+  }
+  .aside-cards {
+    width: 420px;
+  }
+}
+/*RESPONSIVE POUR MOYENS ECRANS en dessous de 1300px (ordi portable, tablette)*/
+@media (max-width: 1300px) {
   /*ENTETE*/
   .entete {
     margin-right: 55px;
@@ -554,18 +572,9 @@ footer a:visited {
     width: 100%;
   }
 }
-/*RESPONSIVE POUR LES ECRANS MOYENS TYPES TABLETTES ORDI PORTABLE 
-@media (min-width: 776px) and (max-width: 1365px) {
-  .aside-maincontener {
-    max-width: 520px;
-  }
-  .aside-cards {
-    width: 350px;
-    height: 152px;
-  }
-}*/
-/*RESPONSIVE POUR ECRAN TYPE IPHONE 8 & Tablettes */
-@media (max-width: 992px) {
+
+/*RESPONSIVE POUR ECRAN TYPE IPHONE 8 en dessous de 775px*/
+@media (max-width: 775px) {
   /*ENTETE*/
 
   header {
@@ -581,7 +590,6 @@ footer a:visited {
     padding-left: 10px;
     margin-top: 0;
   }
-
   .button {
     order: 3;
     width: 100%;
@@ -635,6 +643,20 @@ footer a:visited {
   input {
     width: 100%;
   }
+  .rechercher {
+    display: none;
+  }
+  .loupe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0065fc;
+    border-radius: 15px;
+    width: 58px;
+    height: 50px;
+    cursor: pointer;
+    color: white;
+  }
   /*FILTRES*/
   .filtres {
     flex-wrap: wrap;
@@ -659,6 +681,7 @@ footer a:visited {
   }
   .aside-maincontener {
     height: 100%;
+    width: 375px;
     max-width: 775px;
     border-radius: 0;
   }
@@ -673,6 +696,7 @@ footer a:visited {
   }
   .aside-cards {
     height: 137px;
+    width: 330px;
   }
   .aside-imagecard img {
     height: 100%;
@@ -688,7 +712,6 @@ footer a:visited {
     margin: 0;
     background-color: white;
   }
-
   .cardcontener {
     flex-direction: column;
     align-items: center;
@@ -737,11 +760,9 @@ footer a:visited {
     height: 100%;
     margin-bottom: 22px;
   }
-
   .medium-imagecard img {
     width: 100%;
   }
-
   .medium-imagecard {
     height: 120px;
     width: 100%;
